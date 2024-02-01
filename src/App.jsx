@@ -30,9 +30,12 @@ function App() {
 
   return (
     <div className='container'>
-      <p>{joke}</p>
-      <p> {secondJoke}</p>
+    <h1>Tell me a Joke</h1>
+    <div className='text-div'>
+      <p>"{joke}"</p>
+      <p>"{secondJoke}"</p>
       <button onClick={handleClick}>Next joke</button>
+      </div>
     </div>
   )
 }
