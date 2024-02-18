@@ -11,7 +11,6 @@ function App() {
         return response.json()
       })
       .then((data) => {
-        // console.log(data)
         if (data.type === "single") {
           return (setJoke(data.joke),
             setSecondJoke(""))
@@ -30,14 +29,15 @@ function App() {
 
   return (
     <div className='container'>
-    <h1>Tell me a Joke</h1>
-    <div className='text-div'>
-      <p>"{joke}"</p>
-      <p>"{secondJoke}"</p>
-      <button onClick={handleClick}>Next joke</button>
+      <h1>Tell me a Joke</h1>
+      <div className='text-div'>
+        <p>"{joke}"</p>
+        <p>"{secondJoke}"</p>
+        <button onClick={handleClick}>Next joke</button>
       </div>
     </div>
   )
 }
+
 
 export default App
