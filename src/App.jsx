@@ -31,8 +31,8 @@ function App() {
     <div className='container'>
       <h1>Tell me a Joke</h1>
       <div className='text-div'>
-        <p>"{joke}"</p>
         <p>"{secondJoke}"</p>
+        <p>"{joke}"</p>
         <button onClick={handleClick}>Next joke</button>
       </div>
     </div>
